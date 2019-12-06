@@ -9,12 +9,13 @@ const breedDetailsFromFile = function(breed, func) {
 
     if (!error) return func(data); 
   });
-  // ISSUE: Attempting to return data out here will axslso not work.
-  //        Currently not returning anything from here, so this function returns undefined.
-}
+ }
 
 // we try to get the return value
-const bombay = breedDetailsFromFile('Balinese', function(bombay){
-  console.log('Return breed: ', bombay);
-});
+//const bombay = breedDetailsFromFile('Bombay', function(bombay){
+ // console.log('Return breed: ', bombay);
+//});
 // process.stdout.write('Return Value: ', bombay)
+
+module.exports = breedDetailsFromFile;
+
